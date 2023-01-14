@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import Tshirts from "./components/Tshirts";
+import Product from "./components/Product";
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <Tshirts />
+      <Product />
     </div>
   );
 };

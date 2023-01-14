@@ -1,0 +1,124 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Almond Toe Court Shoes, Patent Black",
+      "category": "Womens Footwear",
+      "price": 99,
+      "discountedPrice": 50,
+      "stock": 5,
+      "img": "https://asset1.cxnmarksandspencer.com/is/image/mands/SD_01_T02_2240A_Y0_X_EC_0?$Intl_PDP_Tab$",
+      "size": ["M", "L", "XL", "XXL"]
+    },
+    {
+      "id": 2,
+      "name": "Suede Shoes, Blue",
+      "category": "Womens Footwear",
+      "price": 42,
+      "discountedPrice": 23,
+      "stock": 4,
+      "img": "https://m.media-amazon.com/images/I/71Uu4qkKr3L._UY695_.jpg",
+      "size": ["M", "L", "XL", "XXL"]
+    },
+    {
+      "id": 3,
+      "name": "Leather Driver Saddle Loafers, Tan",
+      "category": "Mens Footwear",
+      "price": 34,
+      "discountedPrice": 20,
+      "stock": 12,
+      "img": "https://cdn.shopify.com/s/files/1/0569/0284/4581/products/Solid_Casual_Loafers_Shoes_In_Brown_Park-FLPM0023C1SA22FX-image1.jpg?v=1661706080",
+      "size": ["M", "XL", "XXL"]
+    },
+    {
+      "id": 4,
+      "name": "Flip Flops, Red",
+      "category": "Mens Footwear",
+      "price": 199,
+      "discountedPrice": 80,
+      "stock": 6,
+      "img": "https://m.media-amazon.com/images/I/71qBTJGymzL._UX695_.jpg",
+      "size": ["M", "L", "XL"]
+    },
+    {
+      "id": 5,
+      "name": "Flip Flops, Blue",
+      "category": "Mens Footwear",
+      "price": 1099,
+      "discountedPrice": 800,
+      "stock": 0,
+      "img": "https://contents.mediadecathlon.com/p1926157/e3018f924bbae44e6999d1a9fa9929fc/p1926157.jpg",
+      "size": ["L", "XL", "XXL"]
+    },
+    {
+      "id": 6,
+      "name": "Gold Button Cardigan, Black",
+      "category": "Womens Casualwear",
+      "price": 167,
+      "discountedPrice": 100,
+      "stock": 6,
+      "img": "https://di2ponv0v5otw.cloudfront.net/posts/2020/02/07/5e3d8ce1689ebc078bd6e5af/m_5e3d8ce8969d1f44496e12ff.jpg",
+      "size": ["XXL"]
+    },
+    {
+      "id": 7,
+      "name": "Cotton Shorts, Medium Red",
+      "category": "Womens Casualwear",
+      "price": 300,
+      "discountedPrice": 150,
+      "stock": 5,
+      "img": "https://5.imimg.com/data5/ECOM/Default/2022/12/SY/PD/ZE/14340039/1598616116806-13-21-pmcred01-originnm80prcnt-1000x1000.jpg",
+      "size": ["M"]
+    },
+    {
+      "id": 8,
+      "name": "Fine Stripe Short Sleeve Shirt, Grey",
+      "category": "Mens Casualwear",
+      "price": 499.99,
+      "discountedPrice": 390.9,
+      "stock": 9,
+      "img": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1657739624-download-2-1657739594.jpg?crop=1.00xw:0.801xh;0,0.0872xh&resize=480:*",
+      "size": ["M", "XXL"]
+    },
+    {
+      "id": 9,
+      "name": "Fine Stripe Short Sleeve Shirt, Green",
+      "category": "Mens Casualwear",
+      "price": 899.99,
+      "discountedPrice": 799,
+      "stock": 9,
+      "img": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fcd%2F2e%2Fcd2e62a76516f0ba73ff70186be518c96ea364b3.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+      "size": ["M", "L", "XL", "XXL"]
+    },
+    {
+      "id": 10,
+      "name": "Sharkskin Waistcoat, CharcoBlazeral",
+      "category": "Mens Formalwear",
+      "price": 750,
+      "discountedPrice": 550,
+      "stock": 2,
+      "img": "https://www.charlestyrwhitt.com/dw/image/v2/AAWJ_PRD/on/demandware.static/-/Sites-ctshirts-master/default/dwa0632206/hi-res/SUB0508CHA_WAISTCOAT.jpg?sw=430&sh=538&sm=fit&q=42",
+      "size": ["M", "L"]
+    },
+    {
+      "id": 11,
+      "name": "Lightweight Patch Pocket, Deer",
+      "category": "Mens Formalwear",
+      "price": 175.5,
+      "discountedPrice": 130,
+      "stock": 1,
+      "img": "https://www.biggbull.com/wp-content/uploads/2021/09/Axe-Signature-Ticket-Mysterious-Long-Lasting-Pocket-Deodorant-For-Men-17-ml.jpg",
+      "size": ["M", "L"]
+    },
+    {
+      "id": 12,
+      "name": "Bird Print Dress, Black",
+      "category": "Womens Formalwear",
+      "price": 970,
+      "discountedPrice": 800,
+      "stock": 10,
+      "img": "https://assets.ajio.com/medias/sys_master/root/20211012/5mFc/6164ea96aeb2692b85ce139d/-473Wx593H-463099820-black-MODEL.jpg",
+      "size": ["XXL"]
+    }
+  ]
+}
