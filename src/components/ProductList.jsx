@@ -11,7 +11,6 @@ const ProductList = ({
 }) => {
   return (
     <div className="mt-4 w-full p-4 shadow-lg md:w-1/2 lg:w-1/4">
-      {console.log(size)}
       <a className="relative block h-72 overflow-hidden rounded">
         <img
           alt="ecommerce"

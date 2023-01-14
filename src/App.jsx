@@ -1,12 +1,16 @@
 import React from "react";
+
 import Navbar from "./components/Navbar";
 import Product from "./components/Product";
+import { StateContext } from "./context/StateContext";
 
 const App = () => {
   return (
     <div>
-      <Navbar />
-      <Product />
+      <StateContext>
+        <Navbar />
+        <Product />
+      </StateContext>
     </div>
   );
 };

@@ -1,11 +1,23 @@
 import React, { useEffect, useState } from "react";
+
+import { StateContext, useStateContext } from "../context/StateContext";
 import Filter from "./Filter";
-import productData from "../assets/data.json";
 import ProductList from "./ProductList";
 
 const Product = () => {
-  const [products] = useState(productData);
-  const { products: myProducts } = products;
+  const { myProducts, men, women, type } = useStateContext();
+
+  let products = myProducts;
+  if (type === "Men") {
+    products = men.length <= 0 ? myProducts : men;
+  }
+  if (type === "Women") {
+    products = women.length <= 0 ? myProducts : women;
+  }
+
+  if (!men.length <= 0 && !women.length <= 0) {
+    products = myProducts;
+  }
 
   return (
     <div>
@@ -16,7 +28,7 @@ const Product = () => {
           </div>
           <div className="container mx-auto px-5 py-24">
             <div className="-m-4 flex flex-wrap lg:flex-row">
-              {myProducts.map((el) => (
+              {products.map((el) => (
                 <ProductList
                   key={el.id}
                   name={el.name}

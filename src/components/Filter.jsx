@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { AiOutlineDown, AiOutlineLeft, AiOutlineUp } from "react-icons/ai";
 
+import { StateContext, useStateContext } from "../context/StateContext";
+
 const Filter = () => {
+  const { myProducts, handleCheck, clearAll, men, women } = useStateContext();
   const [on, SetOn] = useState(false);
+
   return (
     <div>
       <aside className=" h-screen w-64" aria-label="Sidebar">
@@ -11,12 +15,12 @@ const Filter = () => {
             <li className="border-b-2">
               <p className=" text-whit flex items-center justify-between rounded-lg p-2 text-base font-semibold text-gray-900 ">
                 Filters
-                <a
-                  href="/"
+                <button
+                  onClick={clearAll}
                   className="ml-3 cursor-pointer text-sm font-medium uppercase text-[#2874f0]"
                 >
                   Clear all
-                </a>
+                </button>
               </p>
             </li>
             <li>
@@ -93,6 +97,8 @@ const Filter = () => {
                       className="mt-1 mr-2 h-4 w-4 cursor-pointer appearance-none rounded-sm border border-gray-300 bg-white bg-contain bg-center bg-no-repeat align-top transition duration-200 checked:border-blue-600 checked:bg-blue-600 focus:outline-none"
                       type="checkbox"
                       value=""
+                      name="men"
+                      onChange={(e) => handleCheck("men", e.target.checked)}
                     />
                     <label className="inline-block text-gray-800">Men</label>
                   </div>
@@ -101,6 +107,8 @@ const Filter = () => {
                       className=" mt-1 mr-2 h-4 w-4 cursor-pointer appearance-none rounded-sm border border-gray-300 bg-white bg-contain bg-center bg-no-repeat align-top transition duration-200 checked:border-blue-600 checked:bg-blue-600 focus:outline-none"
                       type="checkbox"
                       value=""
+                      name="men"
+                      onChange={(e) => handleCheck("women", e.target.checked)}
                     />
                     <label
                       className=" inline-block text-gray-800"
