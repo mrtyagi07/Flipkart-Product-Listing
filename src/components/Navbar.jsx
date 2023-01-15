@@ -1,7 +1,14 @@
 import React from "react";
-import { AiOutlineShoppingCart, AiOutlineSearch } from "react-icons/ai";
+import {
+  AiOutlineShoppingCart,
+  AiOutlineSearch,
+  AiOutlineMenu,
+} from "react-icons/ai";
+import { StateContext, useStateContext } from "../context/StateContext";
+import Filter from "./Filter";
 
 const Navbar = () => {
+  const { on, setOn } = useStateContext();
   return (
     <div>
       <header className="bg-[#2874f0] text-white">
@@ -38,11 +45,19 @@ const Navbar = () => {
             <a className="mr-5 hover:text-gray-100">Become a seller</a>
             <a className="mr-5 hover:text-gray-100">More</a>
           </nav>
+
           <div className="mt-4 inline-flex items-center rounded border-0 py-1 px-3 text-base font-bold focus:outline-none md:mt-0">
             <AiOutlineShoppingCart className="mr-2" size={30} /> Cart
           </div>
         </div>
       </header>
+      <div className="relative flex items-center justify-center overflow-hidden bg-white p-4 lg:hidden">
+        <AiOutlineMenu
+          className={`${on && "absolute top-2 left-0 ml-3"}`}
+          onClick={() => setOn(!on)}
+        />
+        {on && <Filter />}
+      </div>
     </div>
   );
 };

@@ -1,17 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import { StateContext, useStateContext } from "../context/StateContext";
 import Filter from "./Filter";
 import ProductList from "./ProductList";
 
 const Product = () => {
-  const { myProducts, men, women, type } = useStateContext();
+  const { myProducts, men, women, type, size, prices } = useStateContext();
 
   let products = myProducts;
-  if (type === "Men") {
+
+  if (!size.length <= 0) {
+    products = size;
+  }
+  if (!prices.length <= 0) {
+    products = prices;
+  }
+
+  if (type === "Men" && prices.length <= 0 && size.length <= 0) {
     products = men.length <= 0 ? myProducts : men;
   }
-  if (type === "Women") {
+  if (type === "Women" && prices.length <= 0 && size.length <= 0) {
     products = women.length <= 0 ? myProducts : women;
   }
 

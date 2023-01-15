@@ -25,7 +25,7 @@ const ProductList = ({
         <h2 className="title-font text-lg font-medium text-gray-900">{name}</h2>
         <div className="flex gap-4">
           {" "}
-          <p className="mt-1 underline">₹{price}</p>
+          <p className="mt-1 line-through">₹{price}</p>
           <p className="mt-1 ">₹{discountedPrice}</p>
           <p className="mt-1 font-semibold text-green-500">
             {Math.floor((discountedPrice * 100) / price)}%
