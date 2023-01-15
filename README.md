@@ -14,15 +14,18 @@ This is a prototype of an flipkart product listing page, built using React, a Ja
     - Feature to clear all filters.
     
     
-### Logic
 
-The website utilizes the React Context API to handle the state management of the application, allowing for dynamic and efficient updates to the components.
+## Approach
 
-The Context API is a powerful feature of React that allows for a centralized state management solution. It allows the developer to create a global context that can be accessed by any component in the application. This means that the state updates are made in one place, and all the components that are dependent on that state get updated automatically, making the code more dynamic and easy to maintain.
+The approach for this was to utilize the React Context API for efficient and dynamic state management and to create reusable and dynamic components.
 
-In this, the main logic of the application such as fetching the data from JSON file accordig to user input, is written in the context API. This makes the code more organized, and easy to understand. The developer can easily access the state and update it from any component, without the need to pass props down multiple levels.
+First, I implemented the Context API to handle the fetching of JSON data and all the main logic of the application such as fetching the data from JSON file and applying the filters. This allows for centralization of the state management and makes the code more organized and easy to understand.
 
-The components in this assignment are also well-written, and are designed to be dynamic and reusable. This means that the same component can be used in different parts of the application, with different props passed in, to create different functionality. This makes the code more efficient, as the developer doesn't have to write the same code multiple times, and it also helps to keep the codebase clean and easy to understand.
+Next, I created various components such as the product component, which renders a list of products, and the filter component, which allows the user to filter the products based on their preferences. These components are designed to be reusable and dynamic, meaning they can be used in different parts of the application with different props passed in to create different functionality.
 
-Overall, the use of React Context API in this allows for efficient and dynamic state management, and the well-written components make the code easy to understand and maintain. 
+In the product component, I am calling the product list and passing the data to it which is coming from the context api. In the filter component, I am taking the user input and sending it to the context API to handle all the logic of applying the filters. This makes the code more efficient and easy to maintain.
+
+Additionally, I have made sure that the website is responsive and have used Tailwind CSS, a utility-first CSS framework to style the website. This ensures that the website looks good on different screen sizes and devices.
+
+Overall, the approach of using React Context API for state management and creating dynamic and reusable components allows for efficient and easy to maintain code, and the responsive design and use of Tailwind CSS ensures a good user experience.
 
